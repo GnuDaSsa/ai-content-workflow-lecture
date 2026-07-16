@@ -3326,4 +3326,32 @@ document.addEventListener('click', function (event) {
   video.muted = false;
   video.play().then(function () { button.style.display = 'none'; }).catch(function () {});
 }, true);
+</script><script>
+(function () {
+  function runCountups(slide) {
+    if (!slide || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    slide.querySelectorAll('[data-countup]').forEach(function (el) {
+      var target = Number(el.getAttribute('data-countup'));
+      if (!Number.isFinite(target)) return;
+      if (el._countupFrame) cancelAnimationFrame(el._countupFrame);
+      var started = performance.now();
+      var duration = Math.min(1800, 700 + String(Math.round(target)).length * 120);
+      el.textContent = '0';
+      function step(now) {
+        var progress = Math.min(1, (now - started) / duration);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(target * eased).toLocaleString('en-US');
+        if (progress < 1) el._countupFrame = requestAnimationFrame(step);
+      }
+      el._countupFrame = requestAnimationFrame(step);
+    });
+  }
+
+  document.addEventListener('slidechange', function (event) {
+    runCountups(event.detail && event.detail.slide);
+  });
+  requestAnimationFrame(function () {
+    runCountups(document.querySelector('[data-deck-active]'));
+  });
+}());
 </script></body></html>
