@@ -228,7 +228,7 @@ a:hover{color:#43C7F4}
     <h2 class="a-mask d1" style="margin:36px 0 0;font-size:72px;line-height:1.2;font-weight:600;letter-spacing:-0.03em;align-self:flex-start">〈The World Should Be Mine〉</h2>
     <div class="a-up d2" style="position:relative;margin-top:56px;width:100%;aspect-ratio:16/9;max-height:560px;overflow:hidden;border:1px solid rgba(255,255,255,.2);background:#101113">
       <video id="first-music-video" src="./assets/first-music-video.mp4" poster="./assets/first-music-video-poster.jpg" controls playsinline preload="auto" style="display:block;width:100%;height:100%;object-fit:contain;background:#000" onplay="document.getElementById('first-music-play').style.display='none'" onpause="document.getElementById('first-music-play').style.display='flex'">이 브라우저에서는 영상을 재생할 수 없습니다.</video>
-      <button id="first-music-play" type="button" aria-label="영상 재생" title="영상 재생" onclick="const v=document.getElementById('first-music-video');v.play().then(()=>{this.style.display='none'}).catch(()=>{})" style="position:absolute;left:50%;top:50%;width:118px;height:118px;transform:translate(-50%,-50%);border:2px solid #fff;border-radius:50%;background:rgba(8,9,10,.68);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2">
+      <button id="first-music-play" data-video-play="first-music-video" type="button" aria-label="영상 재생" title="영상 재생" onclick="const v=document.getElementById('first-music-video');v.play().then(()=>{this.style.display='none'}).catch(()=>{})" style="position:absolute;left:50%;top:50%;width:118px;height:118px;transform:translate(-50%,-50%);border:2px solid #fff;border-radius:50%;background:rgba(8,9,10,.68);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2">
         <span aria-hidden="true" style="display:block;width:0;height:0;margin-left:10px;border-left:34px solid #fff;border-top:22px solid transparent;border-bottom:22px solid transparent"></span>
       </button>
     </div>
@@ -568,9 +568,11 @@ a:hover{color:#43C7F4}
   <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 240px">
     <div class="a-track" style="font-size:26px;letter-spacing:.28em;color:#43C7F4;font-weight:600;align-self:flex-start">SCREENING 01</div>
     <h2 class="a-mask d1" style="margin:36px 0 0;font-size:72px;line-height:1.2;font-weight:600;letter-spacing:-0.03em;align-self:flex-start">첫 작품 — 〈사람 몸에 고양이 영혼〉</h2>
-    <div class="a-up d2" style="margin-top:56px;width:100%;aspect-ratio:16/9;max-height:560px;background:#101113;border:1px solid rgba(255,255,255,.1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px">
-      <div style="width:0;height:0;border-left:44px solid rgba(255,255,255,.25);border-top:28px solid transparent;border-bottom:28px solid transparent"></div>
-      <div style="font-family:ui-monospace,monospace;font-size:24px;color:#6B6B70;text-align:center;line-height:1.6">video slot — 시연 영상 자리<br>mp4 파일을 채팅에 첨부하면 여기에 넣어드립니다</div>
+    <div class="a-up d2" style="position:relative;margin-top:56px;width:100%;aspect-ratio:16/9;max-height:560px;overflow:hidden;border:1px solid rgba(255,255,255,.2);background:#101113">
+      <video id="cat-soul-video" src="./assets/cat-soul-video.mp4" poster="./assets/cat-soul-video-poster.jpg" controls playsinline preload="auto" style="display:block;width:100%;height:100%;object-fit:contain;background:#000" onplay="document.getElementById('cat-soul-play').style.display='none'" onpause="document.getElementById('cat-soul-play').style.display='flex'">이 브라우저에서는 영상을 재생할 수 없습니다.</video>
+      <button id="cat-soul-play" data-video-play="cat-soul-video" type="button" aria-label="영상 재생" title="영상 재생" onclick="const v=document.getElementById('cat-soul-video');v.play().then(()=>{this.style.display='none'}).catch(()=>{})" style="position:absolute;left:50%;top:50%;width:118px;height:118px;transform:translate(-50%,-50%);border:2px solid #fff;border-radius:50%;background:rgba(8,9,10,.68);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2">
+        <span aria-hidden="true" style="display:block;width:0;height:0;margin-left:10px;border-left:34px solid #fff;border-top:22px solid transparent;border-bottom:22px solid transparent"></span>
+      </button>
     </div>
   </div>
 </section>
@@ -3321,5 +3323,5 @@ a:hover{color:#43C7F4}
   }
 })();
 
-</script><script>document.addEventListener('click',function(event){const button=event.composedPath().find(function(node){return node&&node.id==='first-music-play'});if(!button)return;event.preventDefault();event.stopPropagation();const video=document.getElementById('first-music-video');if(!video)return;video.muted=false;video.play().then(function(){button.style.display='none'}).catch(function(){})},true);</script></body></html>
+</script><script>document.addEventListener('click',function(event){const button=event.composedPath().find(function(node){return node&&node.dataset&&node.dataset.videoPlay});if(!button)return;event.preventDefault();event.stopPropagation();const video=document.getElementById(button.dataset.videoPlay);if(!video)return;video.muted=false;video.play().then(function(){button.style.display='none'}).catch(function(){})},true);</script></body></html>
 
