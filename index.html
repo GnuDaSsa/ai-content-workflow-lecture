@@ -1,6 +1,8 @@
-﻿<!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AI 콘텐츠 제작 경험 공유 및 자동화</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"><style>
-
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="utf-8">
+<title>AI 콘텐츠 제작과 자동화</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
 html,body{margin:0;padding:0;background:#08090A}
 @property --speaker-outline-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
 a{color:#6E7BF2;text-decoration:none}
@@ -82,13 +84,9 @@ a:hover{color:#43C7F4}
 [data-deck-active].speaker-chaos .a-fly-3d{animation:speaker-card-static .16s ease-out both;animation-delay:var(--d);z-index:2}
 [data-deck-active].speaker-chaos .a-fly-3d>div:nth-child(2){animation:speaker-type-hero 1.5s cubic-bezier(.12,.86,.22,1) both;animation-delay:var(--d);text-shadow:0 0 22px rgba(255,255,255,.38)}
 [data-deck-active].speaker-chaos .a-fly-3d::after{animation:speaker-outline-reveal .35s ease-out calc(var(--d) + 1.55s) both,speaker-outline-paint 4.8s linear calc(var(--d) + 1.9s) infinite}
-
-</style></head><body><deck-stage width="1920" height="1080">
-
-
-<section data-label="커버" style="background:#08090A;color:#fff;font-family:'Pretendard Variable',Pretendard,sans-serif;word-break:keep-all;overflow-wrap:normal;line-break:strict;overflow:hidden">
+</style></head><body><deck-stage width="1920" height="1080"><section data-label="커버" style="background:#08090A;color:#fff;font-family:'Pretendard Variable',Pretendard,sans-serif;word-break:keep-all;overflow-wrap:normal;line-break:strict;overflow:hidden">
   <div class="a-ken" style="position:absolute;inset:0;overflow:hidden">
-    <img src="./assets/part01-villa-sky.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <img src="./assets/part01-villa-sky.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
   </div>
   <div style="position:absolute;inset:0;background:linear-gradient(90deg,#08090A 30%,rgba(8,9,10,.72) 58%,rgba(8,9,10,.15) 100%);pointer-events:none"></div>
   <div class="df-chrome" style="position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px;pointer-events:none"><div style="width:10px;height:10px;background:rgba(255,255,255,.85)"></div><span style="font-size:24px;letter-spacing:.18em;color:#6B6B70;font-weight:600">AI FILM LAB</span></div>
@@ -189,7 +187,7 @@ a:hover{color:#43C7F4}
 
 <section data-label="영상 제작 계기" style="background:#08090A;color:#fff;font-family:'Pretendard Variable',Pretendard,sans-serif;word-break:keep-all;overflow-wrap:normal;line-break:strict;overflow:hidden">
   <div class="a-ken" style="position:absolute;inset:0;overflow:hidden">
-    <img src="./assets/part01-villa-sky.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <img src="./assets/part01-villa-sky.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
   </div>
   <div style="position:absolute;inset:0;background:linear-gradient(90deg,#08090A 32%,rgba(8,9,10,.75) 60%,rgba(8,9,10,.18) 100%);pointer-events:none"></div>
   <div class="df-chrome" style="position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px;pointer-events:none"><div style="width:10px;height:10px;background:rgba(255,255,255,.85)"></div><span style="font-size:24px;letter-spacing:.18em;color:#6B6B70;font-weight:600">AI FILM LAB</span></div>
@@ -328,11 +326,30 @@ a:hover{color:#43C7F4}
   </div>
 </section>
 
+<section data-label="AI 영상의 일관성 문제" style="background:#08090A;color:#fff;font-family:'Pretendard Variable',Pretendard,sans-serif;word-break:keep-all;overflow-wrap:normal;line-break:strict;overflow:hidden">
+  <div class="df-chrome" style="position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px"><div style="width:10px;height:10px;background:rgba(255,255,255,.85)"></div><span style="font-size:24px;letter-spacing:.18em;color:#6B6B70;font-weight:600">AI FILM LAB</span></div>
+  <div class="df-chrome" style="position:absolute;top:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">CONTINUITY</div>
+  <div class="df-chrome" style="position:absolute;bottom:52px;left:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">AI 콘텐츠 제작과 자동화</div>
+  <div class="df-chrome" style="position:absolute;bottom:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70;font-feature-settings:'tnum'">10 / 27</div>
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:128px 150px 112px">
+    <div style="display:flex;align-items:end;justify-content:space-between;gap:60px">
+      <div><div class="a-track" style="font-size:24px;letter-spacing:.24em;color:#F27878;font-weight:600">WHY A CHARACTER SHEET</div><h2 class="a-mask d1" style="margin:26px 0 0;font-size:70px;line-height:1.2;font-weight:600;letter-spacing:-.03em">AI 영상은 쉽게<br>같은 인물을 놓친다</h2></div>
+      <p class="a-up d2" style="margin:0 0 10px;font-size:26px;color:#A1A1A6;line-height:1.55;max-width:610px">프레임마다 새로 생성되기 때문에<br>얼굴·소품·의상 정보가 조금씩 흔들린다.</p>
+    </div>
+    <div class="a-up d3" style="margin-top:54px;flex:1;min-height:0;overflow:hidden;border:1px solid rgba(255,255,255,.16)"><img src="./assets/ai-video-continuity-failures.png" alt="Three video frames illustrating face and prop continuity failures" style="display:block;width:100%;height:100%;object-fit:cover"></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:28px">
+      <div class="a-up d3" style="border-top:2px solid #F27878;padding-top:14px;font-size:23px;color:#C7C7CC">고개를 돌렸다가 돌아오면<br><strong style="color:#fff;font-size:27px">얼굴이 달라진다</strong></div>
+      <div class="a-up d4" style="border-top:2px solid #F27878;padding-top:14px;font-size:23px;color:#C7C7CC">같은 장면인데도<br><strong style="color:#fff;font-size:27px">의상 디테일이 변한다</strong></div>
+      <div class="a-up d5" style="border-top:2px solid #F27878;padding-top:14px;font-size:23px;color:#C7C7CC">들고 있던 카메라가<br><strong style="color:#fff;font-size:27px">다른 물건으로 바뀐다</strong></div>
+    </div>
+  </div>
+</section>
+
 <section data-label="캐릭터 시트" style="background:#08090A;color:#fff;font-family:'Pretendard Variable',Pretendard,sans-serif;word-break:keep-all;overflow-wrap:normal;line-break:strict;overflow:hidden">
   <div class="df-chrome" style="position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px"><div style="width:10px;height:10px;background:rgba(255,255,255,.85)"></div><span style="font-size:24px;letter-spacing:.18em;color:#6B6B70;font-weight:600">AI FILM LAB</span></div>
   <div class="df-chrome" style="position:absolute;top:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">CHARACTER SHEET</div>
   <div class="df-chrome" style="position:absolute;bottom:52px;left:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">AI 콘텐츠 제작과 자동화</div>
-  <div class="df-chrome" style="position:absolute;bottom:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70;font-feature-settings:'tnum'">10 / 27</div>
+  <div class="df-chrome" style="position:absolute;bottom:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70;font-feature-settings:'tnum'">11 / 27</div>
   <div style="position:absolute;inset:0;display:grid;grid-template-columns:1fr 650px;gap:120px;align-items:center;padding:110px 150px 116px">
     <div>
       <div class="a-track" style="font-size:24px;letter-spacing:.24em;color:#6E7BF2;font-weight:600">CHARACTER SHEET</div>
@@ -352,7 +369,7 @@ a:hover{color:#43C7F4}
   <div class="df-chrome" style="position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px"><div style="width:10px;height:10px;background:rgba(255,255,255,.85)"></div><span style="font-size:24px;letter-spacing:.18em;color:#6B6B70;font-weight:600">AI FILM LAB</span></div>
   <div class="df-chrome" style="position:absolute;top:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">PART 01 · 수작업 시기</div>
   <div class="df-chrome" style="position:absolute;bottom:52px;left:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">AI 콘텐츠 제작과 자동화</div>
-  <div class="df-chrome" style="position:absolute;bottom:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70;font-feature-settings:'tnum'">11 / 27</div>
+  <div class="df-chrome" style="position:absolute;bottom:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70;font-feature-settings:'tnum'">12 / 27</div>
   <div style="position:absolute;inset:0;display:grid;grid-template-columns:510px 1fr;gap:74px;align-items:center;padding:112px 150px 120px">
     <div>
       <div class="a-track" style="font-size:24px;letter-spacing:.24em;color:#6E7BF2;font-weight:600">CHARACTER SHEET</div>
@@ -361,25 +378,6 @@ a:hover{color:#43C7F4}
       <div class="a-up d3" style="margin-top:54px;border-top:1px solid rgba(255,255,255,.18);padding-top:20px;font-size:22px;color:#6B6B70;letter-spacing:.12em">REFERENCE FOR CONSISTENCY</div>
     </div>
     <div class="a-up d3" style="height:718px;background:#F3F3F2;overflow:hidden;border:1px solid rgba(255,255,255,.18)"><img src="./assets/character-sheet-example.png" alt="Fictional character sheet with front side and back views plus facial expressions" style="display:block;width:100%;height:100%;object-fit:cover"></div>
-  </div>
-</section>
-
-<section data-label="AI 영상의 일관성 문제" style="background:#08090A;color:#fff;font-family:'Pretendard Variable',Pretendard,sans-serif;word-break:keep-all;overflow-wrap:normal;line-break:strict;overflow:hidden">
-  <div class="df-chrome" style="position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px"><div style="width:10px;height:10px;background:rgba(255,255,255,.85)"></div><span style="font-size:24px;letter-spacing:.18em;color:#6B6B70;font-weight:600">AI FILM LAB</span></div>
-  <div class="df-chrome" style="position:absolute;top:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">CONTINUITY</div>
-  <div class="df-chrome" style="position:absolute;bottom:52px;left:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">AI 콘텐츠 제작과 자동화</div>
-  <div class="df-chrome" style="position:absolute;bottom:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70;font-feature-settings:'tnum'">12 / 27</div>
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;padding:128px 150px 112px">
-    <div style="display:flex;align-items:end;justify-content:space-between;gap:60px">
-      <div><div class="a-track" style="font-size:24px;letter-spacing:.24em;color:#F27878;font-weight:600">WHY A CHARACTER SHEET</div><h2 class="a-mask d1" style="margin:26px 0 0;font-size:70px;line-height:1.2;font-weight:600;letter-spacing:-.03em">AI 영상은 쉽게<br>같은 인물을 놓친다</h2></div>
-      <p class="a-up d2" style="margin:0 0 10px;font-size:26px;color:#A1A1A6;line-height:1.55;max-width:610px">프레임마다 새로 생성되기 때문에<br>얼굴·소품·의상 정보가 조금씩 흔들린다.</p>
-    </div>
-    <div class="a-up d3" style="margin-top:54px;flex:1;min-height:0;overflow:hidden;border:1px solid rgba(255,255,255,.16)"><img src="./assets/ai-video-continuity-failures.png" alt="Three video frames illustrating face and prop continuity failures" style="display:block;width:100%;height:100%;object-fit:cover"></div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:28px">
-      <div class="a-up d3" style="border-top:2px solid #F27878;padding-top:14px;font-size:23px;color:#C7C7CC">고개를 돌렸다가 돌아오면<br><strong style="color:#fff;font-size:27px">얼굴이 달라진다</strong></div>
-      <div class="a-up d4" style="border-top:2px solid #F27878;padding-top:14px;font-size:23px;color:#C7C7CC">같은 장면인데도<br><strong style="color:#fff;font-size:27px">의상 디테일이 변한다</strong></div>
-      <div class="a-up d5" style="border-top:2px solid #F27878;padding-top:14px;font-size:23px;color:#C7C7CC">들고 있던 카메라가<br><strong style="color:#fff;font-size:27px">다른 물건으로 바뀐다</strong></div>
-    </div>
   </div>
 </section>
 
@@ -468,7 +466,7 @@ a:hover{color:#43C7F4}
 
 <section data-label="PART 02 자동화" style="background:#08090A;color:#fff;font-family:'Pretendard Variable',Pretendard,sans-serif;word-break:keep-all;overflow-wrap:normal;line-break:strict;overflow:hidden">
   <div class="a-ken" style="position:absolute;inset:0;overflow:hidden">
-    <img src="./assets/part02-night-workspace.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <img src="./assets/part02-night-workspace.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
   </div>
   <div style="position:absolute;inset:0;background:linear-gradient(90deg,#08090A 32%,rgba(8,9,10,.75) 60%,rgba(8,9,10,.18) 100%);pointer-events:none"></div>
   <div class="df-chrome" style="position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px;pointer-events:none"><div style="width:10px;height:10px;background:rgba(255,255,255,.85)"></div><span style="font-size:24px;letter-spacing:.18em;color:#6B6B70;font-weight:600">AI FILM LAB</span></div>
@@ -601,7 +599,7 @@ a:hover{color:#43C7F4}
 
 <section data-label="PART 03 반자동화" style="background:#08090A;color:#fff;font-family:'Pretendard Variable',Pretendard,sans-serif;word-break:keep-all;overflow-wrap:normal;line-break:strict;overflow:hidden">
   <div class="a-ken" style="position:absolute;inset:0;overflow:hidden">
-    <img src="./assets/part03-seedance-multimodal.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <img src="./assets/part03-seedance-multimodal.png" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover">
   </div>
   <div style="position:absolute;inset:0;background:linear-gradient(90deg,#08090A 32%,rgba(8,9,10,.75) 60%,rgba(8,9,10,.18) 100%);pointer-events:none"></div>
   <div class="df-chrome" style="position:absolute;top:52px;left:64px;display:flex;align-items:center;gap:14px;pointer-events:none"><div style="width:10px;height:10px;background:rgba(255,255,255,.85)"></div><span style="font-size:24px;letter-spacing:.18em;color:#6B6B70;font-weight:600">AI FILM LAB</span></div>
@@ -730,11 +728,7 @@ a:hover{color:#43C7F4}
       <div style="margin-top:38px;font-size:18px;color:#6B6B70;line-height:1.5">출처 링크: 각 기관 공개 계약·입찰 공고(2025~2026). 과업 범위와 영상 수에 따라 달라짐.</div>
     </div>
   </div>
-</section>
-
-
-</deck-stage><script>
-// @ds-adherence-ignore -- omelette starter scaffold (raw elements/hex/px by design)
+</section></deck-stage><script>// @ds-adherence-ignore -- omelette starter scaffold (raw elements/hex/px by design)
 // Copied omelette starter. Re-running copy_starter_component with this kind overwrites this file with the latest version (page content is unaffected).
 /* ═══ THIS PROJECT USES DESIGN COMPONENTS (.dc.html) ═══
  * Reference this stage from your <x-dc> template as an import — NEVER as a
@@ -3322,6 +3316,14 @@ a:hover{color:#43C7F4}
     customElements.define('deck-stage', DeckStage);
   }
 })();
-
-</script><script>document.addEventListener('click',function(event){const button=event.composedPath().find(function(node){return node&&node.dataset&&node.dataset.videoPlay});if(!button)return;event.preventDefault();event.stopPropagation();const video=document.getElementById(button.dataset.videoPlay);if(!video)return;video.muted=false;video.play().then(function(){button.style.display='none'}).catch(function(){})},true);</script></body></html>
-
+</script><script>
+document.addEventListener('click', function (event) {
+  const button = event.composedPath().find(function (node) { return node && node.dataset && node.dataset.videoPlay; });
+  if (!button) return;
+  event.preventDefault(); event.stopPropagation();
+  const video = document.getElementById(button.dataset.videoPlay);
+  if (!video) return;
+  video.muted = false;
+  video.play().then(function () { button.style.display = 'none'; }).catch(function () {});
+}, true);
+</script></body></html>
