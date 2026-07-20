@@ -1,9 +1,25 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="utf-8">
 <title>AI 콘텐츠 제작과 자동화</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
-html,body{margin:0;padding:0;background:#08090A}
+/* Local Pretendard — offline-safe for zip transfer */
+@font-face{
+  font-family:'Pretendard Variable';
+  font-weight:45 920;
+  font-style:normal;
+  font-display:swap;
+  src:url('./assets/fonts/PretendardVariable.woff2') format('woff2-variations'),
+      url('./assets/fonts/PretendardVariable.woff2') format('woff2');
+}
+@font-face{
+  font-family:Pretendard;
+  font-weight:45 920;
+  font-style:normal;
+  font-display:swap;
+  src:url('./assets/fonts/PretendardVariable.woff2') format('woff2-variations'),
+      url('./assets/fonts/PretendardVariable.woff2') format('woff2');
+}
+html,body{margin:0;padding:0;background:#08090A;font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
 @property --speaker-outline-angle{syntax:'<angle>';initial-value:0deg;inherits:false}
 a{color:#6E7BF2;text-decoration:none}
 a:hover{color:#43C7F4}
@@ -241,12 +257,17 @@ section:not([data-deck-active]) .a-ken{animation:none!important}
   <div class="df-chrome" style="position:absolute;top:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">PART 01 · 수작업 시기</div>
   <div class="df-chrome" style="position:absolute;bottom:52px;left:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70">AI 콘텐츠 제작과 자동화</div>
   <div class="df-chrome" style="position:absolute;bottom:52px;right:64px;font-size:24px;letter-spacing:.14em;color:#6B6B70;font-feature-settings:'tnum'">05 / 28</div>
-  <div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 200px">
-    <div class="a-track" style="font-size:26px;letter-spacing:.28em;color:#6E7BF2;font-weight:600">FIRST PROJECT</div>
-    <h2 class="a-mask d1" style="margin:56px 0 0;font-size:82px;line-height:1.24;font-weight:600;letter-spacing:-0.03em;color:#fff">억울하다, 억울해</h2>
-    <div class="a-up d2" style="margin-top:34px;font-size:28px;color:#6B6B70">The World Should Be Mine</div>
-    <div class="a-line d3" style="margin-top:72px;height:1px;width:100%;background:rgba(255,255,255,.1)"></div>
-    <p class="a-up d4 d2" style="margin:28px 0 0;font-size:28px;color:#A1A1A6;line-height:1.7">치과의사가 되면 세상이 너의 것이 될 것이라 했지만,<br>치과의사가 되고 보니 세상은 전혀 나의 것이 아니었다.</p>
+  <div style="position:absolute;inset:0;display:grid;grid-template-columns:1fr 680px;gap:56px;align-items:center;padding:112px 100px 96px 150px">
+    <div>
+      <div class="a-track" style="font-size:26px;letter-spacing:.28em;color:#6E7BF2;font-weight:600">FIRST PROJECT</div>
+      <h2 class="a-mask d1" style="margin:40px 0 0;font-size:72px;line-height:1.2;font-weight:600;letter-spacing:-0.03em;color:#fff">억울하다, 억울해</h2>
+      <div class="a-up d2" style="margin-top:28px;font-size:26px;color:#6B6B70">The World Should Be Mine</div>
+      <div class="a-line d3" style="margin-top:48px;height:1px;width:100%;max-width:640px;background:rgba(255,255,255,.1)"></div>
+      <p class="a-up d4" style="margin:28px 0 0;font-size:26px;color:#A1A1A6;line-height:1.7;max-width:640px">치과의사가 되면 세상이 너의 것이 될 것이라 했지만,<br>치과의사가 되고 보니 세상은 전혀 나의 것이 아니었다.</p>
+    </div>
+    <div class="a-up d3" style="justify-self:end;align-self:center;width:100%;max-width:600px;max-height:860px;aspect-ratio:2/3;overflow:hidden;border:1px solid rgba(255,255,255,.18);background:#0A0B0C;box-shadow:0 24px 64px rgba(0,0,0,.45)">
+      <img src="./assets/unfair-comic.png" alt="억울하다 억울해 뮤직비디오 콘셉트 만화" style="display:block;width:100%;height:100%;object-fit:contain;object-position:center">
+    </div>
   </div>
 </section>
 
